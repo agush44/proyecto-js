@@ -1,0 +1,426 @@
+#nosotros .quienesSomos p, #main-galeria .galeriaText p, .container .descripcionProd, #container-index .cajaTexto .descripcion {
+  text-align: justify;
+  line-height: 2rem;
+  color: #494848; }
+
+#contacto .containerForm .contacto, #nosotros .quienesSomos .nosotrosTitulo, #main-galeria .galeriaText h2, .container .tituloProd {
+  text-align: center;
+  font-size: 2rem;
+  margin: 2rem; }
+
+#contacto {
+  background-image: url(/img/foto-contacto.jpg); }
+  #contacto .containerForm {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 11rem; }
+    #contacto .containerForm .contacto {
+      font-family: "Lobster", cursive;
+      color: #212529;
+      padding-right: 4rem; }
+    #contacto .containerForm .form {
+      width: 300px;
+      padding: 16px;
+      border-radius: 10px;
+      background-color: #ccc;
+      margin-bottom: 2rem; }
+      #contacto .containerForm .form label {
+        width: 72px;
+        font-weight: bold;
+        display: inline-block; }
+      #contacto .containerForm .form input[type="text"],
+      #contacto .containerForm .form input[type="email"] {
+        width: 180px;
+        padding: 3px 10px;
+        border: 1px solid #f6f6f6;
+        border-radius: 3px;
+        background-color: #f6f6f6;
+        margin: 8px 0;
+        display: inline-block; }
+      #contacto .containerForm .form input[type="submit"] {
+        width: 100%;
+        padding: 8px 16px;
+        margin-top: 32px;
+        border: 1px solid #000;
+        border-radius: 5px;
+        display: block;
+        color: #fff;
+        background-color: #000; }
+        #contacto .containerForm .form input[type="submit"]:hover {
+          cursor: pointer;
+          background-color: rgba(51, 51, 51, 0.705);
+          border: rgba(51, 51, 51, 0.705) 1px solid; }
+      #contacto .containerForm .form textarea {
+        width: 100%;
+        height: 100px;
+        border: 1px solid #f6f6f6;
+        border-radius: 3px;
+        background-color: #f6f6f6;
+        margin: 8px 0;
+        resize: none;
+        display: block; }
+
+#nosotros {
+  width: 100%;
+  height: 80vh; }
+  #nosotros .quienesSomos {
+    padding: 5rem 0 0 7rem; }
+    #nosotros .quienesSomos .nosotrosTitulo {
+      font-family: "Lobster", cursive;
+      color: #212529; }
+  #nosotros .asideNosotros {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #nosotros .asideNosotros .imgBruschettas {
+      border-radius: 10px;
+      height: 70vh; }
+
+#main-galeria {
+  padding-bottom: 3rem; }
+  #main-galeria .galeriaText {
+    padding: 3.5rem; }
+    #main-galeria .galeriaText h2 {
+      font-family: "Lobster", cursive;
+      color: #212529; }
+  #main-galeria .galeriaRight {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0; }
+    #main-galeria .galeriaRight img {
+      border-radius: 5px;
+      padding: 0; }
+  #main-galeria .galeriaLeft {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0; }
+    #main-galeria .galeriaLeft img {
+      border-radius: 5px;
+      padding: 0; }
+
+.container .tituloProd {
+  font-family: "Lobster", cursive;
+  color: #212529; }
+
+.cardContenedor {
+  display: flex;
+  justify-content: center; }
+  .cardContenedor .card {
+    margin-bottom: 2rem; }
+    .cardContenedor .card .panes {
+      width: 286px;
+      height: 287px; }
+    .cardContenedor .card .card-title {
+      font-family: "Lobster", cursive; }
+    .cardContenedor .card .card-text {
+      color: rgba(51, 51, 51, 0.805); }
+    .cardContenedor .card .btn {
+      width: 40%;
+      padding: 8px 16px;
+      margin-top: 32px;
+      border: 1px solid #000;
+      border-radius: 5px;
+      display: block;
+      color: #fff !important;
+      background-color: #000;
+      font-family: "Lobster", cursive;
+      font-size: 1.2rem; }
+      .cardContenedor .card .btn:hover {
+        background-color: rgba(51, 51, 51, 0.815);
+        border: none;
+        transform: scale(1.1);
+        transition: 0.3s; }
+
+#miModal .modal-content #modalCarrito .modal-body {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between; }
+  #miModal .modal-content #modalCarrito .modal-body .precio-btnEliminar {
+    display: flex;
+    align-items: flex-start; }
+    #miModal .modal-content #modalCarrito .modal-body .precio-btnEliminar .precio {
+      padding-right: 0.5rem; }
+    #miModal .modal-content #modalCarrito .modal-body .precio-btnEliminar .btn-eliminar {
+      border: none;
+      margin-left: 1rem; }
+
+#miModal .modal-content .modal-footer .btn-pagar {
+  width: 20%;
+  margin-left: 1rem;
+  padding: 8px 16px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  display: block;
+  color: #fff !important;
+  background-color: #000;
+  font-family: "Lobster", cursive;
+  font-size: 1.2rem; }
+  #miModal .modal-content .modal-footer .btn-pagar:hover {
+    background-color: rgba(51, 51, 51, 0.815);
+    border: none;
+    transform: scale(1.1);
+    transition: 0.3s; }
+
+#login {
+  display: none; }
+
+#registro {
+  display: none; }
+
+.registro:hover {
+  border-bottom: 2px solid #333; }
+
+.login {
+  flex-direction: column;
+  align-items: flex-end;
+  height: 80vh;
+  width: 100%; }
+  .login .form-login {
+    margin: 0 auto;
+    width: 300px;
+    padding: 16px;
+    border-radius: 10px;
+    background-color: #ccc;
+    margin-bottom: 2rem; }
+    .login .form-login .label-login {
+      width: 72px;
+      font-weight: bold;
+      display: inline-block;
+      margin-right: 1rem; }
+    .login .form-login .input-login[type="text"],
+    .login .form-login .input-login[type="password"],
+    .login .form-login .input-login[type="email"] {
+      width: 180px;
+      padding: 3px 10px;
+      border: 1px solid #f6f6f6;
+      border-radius: 3px;
+      background-color: #f6f6f6;
+      margin: 16px 0;
+      display: inline-block; }
+    .login .form-login button {
+      width: 100%;
+      padding: 8px 16px;
+      margin-top: 32px;
+      border: 1px solid #000;
+      border-radius: 5px;
+      display: block;
+      color: #fff;
+      background-color: #000; }
+      .login .form-login button:hover {
+        cursor: pointer;
+        background-color: rgba(51, 51, 51, 0.705);
+        border: rgba(51, 51, 51, 0.705) 1px solid; }
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Flex", sans-serif;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+  a:active, a:visited {
+    color: #333; }
+
+.header {
+  width: 100%;
+  height: 12vh; }
+  .header #navBar {
+    padding: 0;
+    background: linear-gradient(0deg, #f9f9f9 0%, #a8a8a8 100%); }
+  .header .logo {
+    width: 80px;
+    height: 80px; }
+  .header .navbar-brand {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    font-family: "Lobster", cursive;
+    color: #212529; }
+  .header .nav-item a {
+    padding-bottom: 2px;
+    height: 2.5rem; }
+    .header .nav-item a:hover {
+      border-bottom: 2px solid #333; }
+  .header #boton-carrito {
+    border: none;
+    background: none;
+    margin-top: .5rem;
+    padding-left: 0.5rem; }
+  .header #contadorCarrito {
+    padding-left: .5rem; }
+
+#container-index {
+  width: 100%;
+  height: 80vh; }
+  #container-index .cajaTexto {
+    padding: 5rem 0 5rem 5rem; }
+    #container-index .cajaTexto .titulo {
+      text-align: center;
+      font-size: 60px;
+      font-family: "Lobster", cursive; }
+    #container-index .cajaTexto .descripcion {
+      padding: 50px 65px; }
+  #container-index .cajaImagen {
+    display: flex;
+    justify-content: space-around;
+    padding: 0; }
+    #container-index .cajaImagen .imagen {
+      width: 420px;
+      height: 519px; }
+
+.footer {
+  background: linear-gradient(0deg, #a8a8a8 0%, #f9f9f9 100%); }
+  .footer ul {
+    display: flex;
+    justify-content: center;
+    height: 8vh;
+    margin-bottom: 0; }
+    .footer ul li {
+      list-style: none;
+      padding: 20px; }
+      .footer ul li .iconos {
+        padding-left: 10px; }
+      .footer ul li a {
+        padding: 5px; }
+        .footer ul li a:hover {
+          border-bottom: 2px solid #333; }
+
+@media (max-width: 768px) {
+  /* INDEX */
+  #container-index {
+    width: 100%;
+    height: 80vh; }
+    #container-index .cajaTexto {
+      height: 50vh;
+      padding: 3rem 3rem 2.5rem 3rem; }
+      #container-index .cajaTexto .titulo {
+        padding-top: 2rem;
+        font-size: 3.5rem; }
+      #container-index .cajaTexto .descripcion {
+        padding: 2rem 0 2rem 1rem; }
+    #container-index .cajaImagen {
+      padding-top: 3rem; }
+      #container-index .cajaImagen .imagen {
+        height: 525px;
+        width: 350px;
+        padding-bottom: 4rem; }
+  #cardContenedor {
+    padding-top: 2rem; }
+  .main-galeria {
+    height: 135vh; }
+    .main-galeria .contenedor-galeria {
+      width: 70%;
+      padding-top: 3rem;
+      margin: 0 auto; }
+  #nosotros {
+    display: flex;
+    height: 80vh; }
+    #nosotros .quienesSomos {
+      padding: 2rem 3rem 2rem 3rem; }
+      #nosotros .quienesSomos .nosotrosTitulo {
+        margin: 0;
+        padding-bottom: 2rem; }
+    #nosotros .asideNosotros {
+      padding-right: 2rem; }
+      #nosotros .asideNosotros .imgBruschettas {
+        max-height: 500px; }
+  #contacto {
+    background-image: url(/img/foto1-contacto.jpg); }
+    #contacto .containerForm {
+      display: block;
+      padding: 0;
+      margin-bottom: 5px;
+      height: 75.9vh; }
+      #contacto .containerForm .contacto {
+        padding: 0; }
+      #contacto .containerForm .form {
+        width: 300px;
+        padding: 1rem;
+        border-radius: 10px;
+        margin: auto;
+        background-color: #ccc;
+        margin-bottom: 2rem; }
+        #contacto .containerForm .form label {
+          width: 72px;
+          font-weight: bold;
+          display: inline-block; }
+        #contacto .containerForm .form input[type="text"],
+        #contacto .containerForm .form input[type="email"] {
+          width: 180px;
+          padding: 3px 10px;
+          border: 1px solid #f6f6f6;
+          border-radius: 3px;
+          background-color: #f6f6f6;
+          margin: 8px 0;
+          display: inline-block; }
+        #contacto .containerForm .form input[type="submit"] {
+          width: 100%;
+          padding: 8px 16px;
+          margin-top: 32px;
+          border: 1px solid #000;
+          border-radius: 5px;
+          display: block;
+          color: #fff;
+          background-color: #000; }
+          #contacto .containerForm .form input[type="submit"]:hover {
+            cursor: pointer;
+            background-color: rgba(51, 51, 51, 0.705);
+            border: rgba(51, 51, 51, 0.705) 1px solid; }
+        #contacto .containerForm .form textarea {
+          width: 100%;
+          height: 100px;
+          border: 1px solid #f6f6f6;
+          border-radius: 3px;
+          background-color: #f6f6f6;
+          margin: 8px 0;
+          resize: none;
+          display: block; } }
+
+@media (max-width: 480px) {
+  #container-index {
+    width: 100%;
+    height: 120vh; }
+    #container-index .cajaTexto {
+      height: 50vh;
+      padding: 0 5rem; }
+      #container-index .cajaTexto .titulo {
+        padding-top: 2rem; }
+      #container-index .cajaTexto .descripcion {
+        padding: 2rem 0 2rem 1rem; }
+    #container-index .cajaImagen {
+      padding: 5rem 0 2rem 1rem; }
+      #container-index .cajaImagen .imagen {
+        height: 525px;
+        width: 350px;
+        padding-bottom: 4rem; }
+  #contProd {
+    height: 250vh; }
+    #contProd #cajaProd {
+      height: 50vh; }
+      #contProd #cajaProd #col-prod .tituloProd {
+        padding-top: 2rem;
+        margin: 0; }
+      #contProd #cajaProd #col-prod .descripcionProd {
+        padding: 2rem 2rem 2rem 3rem; }
+    #contProd #cardContenedor {
+      padding-left: 2.3rem;
+      padding-top: 2rem; }
+  #main-galeria {
+    height: 320vh; }
+    #main-galeria #galeria-img {
+      padding-top: 0; }
+    #main-galeria #left {
+      display: flex;
+      flex-direction: column-reverse; }
+  #nosotros {
+    height: 135vh; }
+    #nosotros .quienesSomos {
+      padding: 2rem 3rem 2rem 4rem; }
+      #nosotros .quienesSomos .nosotrosTitulo {
+        margin: 0;
+        padding-bottom: 2rem; }
+    #nosotros .asideNosotros {
+      padding: 0 3rem 3rem 4rem; }
+  .containerForm {
+    height: 75.9vh; } }

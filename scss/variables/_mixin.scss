@@ -1,0 +1,4 @@
+@mixin typoTitle ($tipografiaTitulo, $colorTitulo){
+    font-family: $tipografiaTitulo;
+    color: $colorTitulo;
+}

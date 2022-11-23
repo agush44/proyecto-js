@@ -1,0 +1,165 @@
+.container {
+    .tituloProd {
+        @extend %estilosTitulos;
+        @include typoTitle($tipografiaTitulo, $colorTitulo);
+    }
+
+    .descripcionProd {
+        @extend %estilosParrafo;
+    }
+}
+
+.cardContenedor {
+    display: flex;
+    justify-content: center;
+
+    .card {
+        margin-bottom: 2rem;
+
+        .panes {
+            width: 286px;
+            height: 287px;
+        }
+
+        .card-title {
+            font-family: $tipografiaTitulo;
+        }
+
+        .card-text {
+            color: rgba(51, 51, 51, 0.805);
+        }
+
+        .btn {
+            width: 40%;
+            padding: 8px 16px;
+            margin-top: 32px;
+            border: 1px solid #000;
+            border-radius: 5px;
+            display: block;
+            color: #fff !important;
+            background-color: #000;
+            font-family: $tipografiaTitulo;
+            font-size: 1.2rem;
+
+            &:hover {
+                background-color: rgba(51, 51, 51, 0.815);
+                border: none;
+                transform: scale(1.1);
+                transition: 0.3s;
+            }
+        }
+    }
+}
+
+#miModal {
+    .modal-content {
+        #modalCarrito {
+            .modal-body {
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+
+                .precio-btnEliminar {
+                    display: flex;
+                    align-items: flex-start;
+
+                    .precio {
+                        padding-right: 0.5rem;
+                    }
+
+                    .btn-eliminar {
+                        border: none;
+                        margin-left: 1rem;
+                    }
+                }
+            }
+        }
+        .modal-footer{
+            .btn-pagar {
+                width: 20%;
+                margin-left: 1rem;
+                padding: 8px 16px;
+                border: 1px solid #000;
+                border-radius: 5px;
+                display: block;
+                color: #fff !important;
+                background-color: #000;
+                font-family: $tipografiaTitulo;
+                font-size: 1.2rem;
+                
+                &:hover {
+                    background-color: rgba(51, 51, 51, 0.815);
+                    border: none;
+                    transform: scale(1.1);
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+}
+
+#login{
+    display: none;
+}
+
+#registro{
+    display: none;
+}
+
+.registro{
+    &:hover{
+        border-bottom: 2px solid #333;
+    }
+}
+
+.login{
+    flex-direction: column;
+    align-items: flex-end;
+    height: 80vh;
+    width: 100%;
+
+    .form-login {
+        margin: 0 auto;
+        width: 300px;
+        padding: 16px;
+        border-radius: 10px;
+        background-color: #ccc;
+        margin-bottom: 2rem;
+
+        .label-login {
+            width: 72px;
+            font-weight: bold;
+            display: inline-block;
+            margin-right: 1rem;
+        }
+
+        .input-login[type="text"],
+        .input-login[type="password"],
+        .input-login[type="email"] {
+            width: 180px;
+            padding: 3px 10px;
+            border: 1px solid #f6f6f6;
+            border-radius: 3px;
+            background-color: #f6f6f6;
+            margin: 16px 0;
+            display: inline-block;
+        }
+
+        button{
+            width: 100%;
+            padding: 8px 16px;
+            margin-top: 32px;
+            border: 1px solid #000;
+            border-radius: 5px;
+            display: block;
+            color: #fff;
+            background-color: #000;
+
+            &:hover {
+                cursor: pointer;
+                background-color: rgba(51, 51, 51, 0.705);
+                border: rgba(51, 51, 51, 0.705) 1px solid;
+            }
+        }
+    }
+}

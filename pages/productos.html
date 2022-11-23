@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="pan, masa madre, panaderia, cocina">
+    <meta name="description" content="Realizamos pan de masa madre y derivados con ingredientes de primera calidad">
+    <script src="https://kit.fontawesome.com/6fc25906a6.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato&family=Lobster&family=Roboto+Flex:opsz,wght@8..144,300;8..144,400;8..144,700&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="../img/un-pan.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Productos</title>
+</head>
+
+<body>
+    <!-- ENCABEZADO -->
+    <div class="header">
+        <nav class="navbar navbar-expand-lg bg-light" id="navBar">
+            <div class="container-fluid">
+                <!-- LOGO -->
+                <div class="logoTitulo">
+                    <a href="../index.html"><img src="../img/boule.png" alt="imagen del logo" class="logo" /></a>
+                </div>
+                <a class="navbar-brand" href="../index.html">Boule</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <button id="boton-carrito" data-bs-toggle="modal" data-bs-target="#miModal">
+                                <i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- CONTENIDO PRINCIPAL -->
+    <div class="container" id="contProd">
+        <div class="row" id="cajaProd">
+            <div class="col-12" id="col-prod">
+                <h2 class="tituloProd">Productos</h2>
+                <p class="descripcionProd">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam vero
+                    mollitia animi corrupti rerum necessitatibus ad repellat nisi, dolor
+                    perferendis dicta quia provident aspernatur! Maxime qui fugiat placeat
+                    explicabo aspernatur. Sint, debitis! Autem ipsum reiciendis at dicta,
+                    quidem hic, exercitationem nostrum saepe eius ipsam dolorum porro fuga
+                    sapiente.
+                </p>
+            </div>
+        </div>
+        <div class="row" id="rowPadre">
+
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="modalTitle"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalTitle">Productos en carrito</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div id="modalCarrito">
+                    </div>
+                    <div class="modal-footer">
+                        <p class="precioProducto">
+                            Precio total: $<span id="precioTotal">0</span>
+                        </p>
+                        <button class="btn-pagar" id="pagar">Pagar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="containerForm login" id="login">
+        <form action="#" method="get" class="form form-login" id="formReset">
+            <label class="label-login" for="email">Email</label>
+            <input class="input-login" type="text" name="email" id="email1" placeholder="Email" class="input" value="">
+
+            <label class="label-login" for="password">Contraseña</label>
+            <input class="input-login" type="password" name="password" id="password1" placeholder="Contraseña" required class="input" value="">
+
+            <p id="textoLogin"></p>
+
+            <a href="#registro" id="irAlRegistro" class="registro">Registrarme ahora</a>
+
+            <button type="button" id="btn-ingresar">Iniciar sesión</button>
+        </form>
+    </div>
+
+    <div class="containerForm" id="registro">
+        <form action="#" method="get" class="form" id="form">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="input" value="">
+
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" id="apellido" placeholder="Apellido" class="input" value="">
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email2" placeholder="Email" required class="input" value="">
+
+            <label for="password">Contraseña</label>
+            <input type="password" name="password" id="password2" placeholder="Contraseña" required class="input" value="">
+
+            <button type="button" id="btn-registrar">Registrarme</button>
+        </form>
+    </div>
+
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <ul>
+            <li>
+                <i class="fa-brands fa-facebook"></i><a href="https://www.facebook.com/" target="_blank">Facebook</a>
+            </li>
+            <li>
+                <i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/" target="_blank">Instagram</a>
+            </li>
+            <li>
+                <i class="fa-brands fa-twitter"></i><a href="https://twitter.com/" target="_blank">Twitter</a>
+            </li>
+        </ul>
+    </div>
+    <!-- LIBRERIAS -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JS -->
+    <script src="../stockProd.json"></script>
+    <script async src="../app.js"></script>
+</body>
+
+</html>
